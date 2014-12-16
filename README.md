@@ -14,7 +14,7 @@ run `sudo ./host.sh`
 
 ## Details
 
-Running the bash script as described starts a docker container that runs apache and shares the current directory as /var/www into the container. Apache is http and https ports are exposed from the docker container and mapped to the host as reported by host.sh. The ports used are the next available ports equal to or greater than 8080 for http and 8443 https. 
+Running the bash script as described starts a docker container that runs apache and shares the current directory into /var/www in the container. Apache http and https ports are exposed from the docker container and mapped to the host as reported by host.sh. The ports used are the next available ports equal to or greater than 8080 for http and 8443 https. 
 
 You can modify the contents of the self-host index.html (or other files). Changes should be reflected in a browser pointing at the hosted apache site when it is refreshed.  
 
