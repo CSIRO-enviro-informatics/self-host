@@ -5,4 +5,4 @@ RUN gem install sass
 RUN gem install bourbon
 RUN gem install neat 
 RUN mkdir -p /var/www/stylesheets  
-CMD /usr/sbin/apache2ctl -D FOREGROUND && sass --watch /var/www/stylesheets:/var/www/stylesheets
+CMD /usr/sbin/apache2ctl -D FOREGROUND && sass --watch /var/www/stylesheets:/var/www/stylesheets -E "UTF-8"
